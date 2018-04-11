@@ -20,6 +20,7 @@ public class ConsumerStudyCtr {
 
     @RequestMapping(value = "/feign", method = RequestMethod.GET)
     public String Hello() {
+        System.out.println("@@feign is called \r\n");
         return userRepository.Hello();
     }
 
